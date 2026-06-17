@@ -712,7 +712,7 @@ def stockTraining (stock_name):
         "Symbol": stock_name,
         "CurrentPrice": round(current_price, 2),
         "PredictedPrice": round(float(pred_price), 2),
-        "ExpectedReturn ": round(float(expected_return), 2),
+        "ExpectedReturn": round(float(expected_return), 2),
         "rmse":rmse,
         "r2":R2,
         "DirectionAccuracy":round(float(Direction_Accuracy)),
