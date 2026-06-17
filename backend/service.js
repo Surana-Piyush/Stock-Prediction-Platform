@@ -1,11 +1,13 @@
 const express = require("express")
 const predictionRoutes = require("./routes/prediction.route.js");
 const stockNames = require("./routes/stockNames.route.js")
+const cors = require("cors");
 
 const PORT = 3000;
 
 const app = new express();
 app.use(express.json());
+app.use(cors());
 
 app.get("/",(req,res)=>{
     res.json({
