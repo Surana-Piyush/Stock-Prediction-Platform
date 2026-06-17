@@ -692,14 +692,32 @@ def stockTraining (stock_name):
         / current_price
     ) * 100
 
+    
+    if expected_return >= 2:
+        signal = "STRONG BUY"
+
+    elif expected_return >= 0.5:
+        signal = "BUY"
+
+    elif expected_return > -0.5:
+        signal = "HOLD"
+
+    elif expected_return > -2:
+        signal = "SELL"
+
+    else:
+        signal = "STRONG SELL"
+
     return {
         "Symbol": stock_name,
-        "Current Price": round(current_price, 2),
-        "Predicted Price": round(float(pred_price), 2),
-        "Expected Return %": round(float(expected_return), 2),
+        "CurrentPrice": round(current_price, 2),
+        "PredictedPrice": round(float(pred_price), 2),
+        "ExpectedReturn ": round(float(expected_return), 2),
         "rmse":rmse,
         "r2":R2,
-        "Direction Accuracy":round(float(Direction_Accuracy))
+        "DirectionAccuracy":round(float(Direction_Accuracy)),
+        "Confidence":round((R2*100),2),
+        "Signal":signal
     }
     
 

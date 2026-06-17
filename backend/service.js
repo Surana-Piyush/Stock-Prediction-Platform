@@ -1,5 +1,6 @@
 const express = require("express")
 const predictionRoutes = require("./routes/prediction.route.js");
+const stockNames = require("./routes/stockNames.route.js")
 
 const PORT = 3000;
 
@@ -13,6 +14,7 @@ app.get("/",(req,res)=>{
 })
 
 app.use("/api",predictionRoutes);
+app.use("/api",stockNames);
 
 app.listen(PORT,()=>{
     console.log("Running at port 3000")
