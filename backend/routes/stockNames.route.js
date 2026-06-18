@@ -55,7 +55,7 @@ const STOCKS = [
 
 const router = express.Router();
 
-router.get("/stocks",async (req,res)=>{
+router.get("/stocks",(req,res)=>{
 
     // Backend server takes to much time to load all stocks
     // const csvPath = path.join(__dirname, "..","Nifty 50.csv");

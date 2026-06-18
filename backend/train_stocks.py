@@ -661,16 +661,8 @@ for stock in stocks:
     rmse = root_mean_squared_error(y_test,pred)
 
     R2 = r2_score(y_test,pred)
-    actual_direction = np.sign(
-    y_test.values - stock_df.iloc[split:]["Close"].values
-    )
-
-    pred_direction = np.sign(
-        pred - stock_df.iloc[split:]["Close"].values
-    )
-
     Direction_Accuracy = np.mean(
-        actual_direction == pred_direction
+    np.sign(pred) == np.sign(y_test)
     )
 
     current_price = float(stock_df.iloc[-1]["Close"])
