@@ -688,6 +688,21 @@ for stock in stocks:
     else:
         signal = "STRONG SELL"
 
+    if signal == "STRONG BUY":
+        analysis = "The model identifies strong bullish momentum supported by recent market trends and technical indicators. Current conditions suggest a high probability of continued upward movement."
+
+    elif signal == "BUY":
+        analysis = "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
+
+    elif signal == "HOLD":
+        analysis = "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
+
+    elif signal == "SELL":
+        analysis = "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
+
+    else:  # STRONG SELL
+        analysis = "The model detects strong bearish momentum supported by recent market trends and technical indicators. Current conditions indicate elevated downside risk in the near term."
+
     prediction[stock]={
         "Symbol": stock,
         "CurrentPrice": round(current_price, 2),
@@ -697,7 +712,8 @@ for stock in stocks:
         "r2":R2,
         "DirectionAccuracy":round(float(Direction_Accuracy)),
         "Confidence":round((R2*100),2),
-        "Signal":signal
+        "Signal":signal,
+        "Analysis":analysis
     }
 
 with open("predictions.json", "w") as f:

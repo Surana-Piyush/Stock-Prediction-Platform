@@ -199,7 +199,7 @@ export default function Dashboard() {
               isLoading={isPredicting} 
             />
             <MetricCard 
-              title="Predicted (T+1)" 
+              title="Predicted (Tomorrow)" 
               value={predictedPrice} 
               isLoading={isPredicting}
             />
@@ -258,10 +258,10 @@ export default function Dashboard() {
 
       {/* Footer */}
       <footer className="w-full mt-auto bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-stack-md px-margin-mobile md:px-margin-desktop py-stack-lg relative z-10 select-none">
-        <div className="font-label-md text-label-md text-on-surface-variant">
-          © {new Date().getFullYear()} NIFTY.AI. Powered by MLP Regression &amp; Real-time NSE Data.
+        <div className="flex flex-col gap-1 font-label-md text-label-md text-on-surface-variant items-start">
+          <div>© {new Date().getFullYear()} NIFTY.AI. Powered by MLP Regression &amp; Real-time NSE Data.</div>
+          <div className="text-primary font-semibold text-xs mt-0.5">Made By Piyush Surana</div>
         </div>
-
       </footer>
 
     </div>

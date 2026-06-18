@@ -3,13 +3,13 @@ import React from 'react';
 /**
  * MetricCard renders the exact HTML card structure from the Stitch design system.
  * @param {object} props
- * @param {string} props.title - 'CURRENT PRICE', 'PREDICTED (T+1)', 'EXPECTED CHANGE', 'CONFIDENCE'
+ * @param {string} props.title - 'CURRENT PRICE', 'PREDICTED (TOMORROW)', 'EXPECTED CHANGE', 'CONFIDENCE'
  * @param {string|number} props.value - Display value
  * @param {boolean} props.isLoading - Whether the card is loading
  * @param {number} [props.expectedChange] - Expected return value
  */
 export default function MetricCard({ title, value, isLoading, expectedChange }) {
-  const isPredicted = title.toUpperCase() === 'PREDICTED (T+1)';
+  const isPredicted = title.toUpperCase() === 'PREDICTED (TOMORROW)';
   const isExpectedChange = title.toUpperCase() === 'EXPECTED CHANGE';
   const hasData = value !== null && value !== undefined && value !== '--';
 
@@ -59,7 +59,7 @@ export default function MetricCard({ title, value, isLoading, expectedChange }) 
     );
   }
 
-  // 2. Predicted (T+1) Card (primary blue highlight with top-down gradient overlay)
+  // 2. Predicted (Tomorrow) Card (primary blue highlight with top-down gradient overlay)
   if (isPredicted) {
     return (
       <div className="glass-card inner-glow rounded-xl p-4 flex flex-col relative overflow-hidden border border-white/10 transition-all duration-300 hover:scale-[1.02]">

@@ -53,7 +53,7 @@ export default function ForecastChart({ currentPrice, predictedPrice, isLoading 
       
       let label = '';
       if (i === 0) label = 'Today';
-      if (i === steps) label = 'T+1';
+      if (i === steps) label = 'Tomorrow';
       
       data.push({
         label,
