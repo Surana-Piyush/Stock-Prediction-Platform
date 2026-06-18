@@ -1,6 +1,7 @@
 const express = require("express");
 const { exec } = require("child_process");
 const path = require("path");
+const fs = require("fs");
 
 const router = express.Router();
 
@@ -8,44 +9,27 @@ router.post("/predict", (req, res) => {
 
     const stock = req.body.stock;
 
-    const pythonFile = path.join(
+    const predictionsPath = path.join(
         __dirname,
-        "..",
-        "predict.py"
+        "..", "..",
+        "predictions.json"
     );
 
-    exec(
-        `python "${pythonFile}" ${stock}`,
-        (error, stdout, stderr) => {
+    const predictions = JSON.parse(
+        fs.readFileSync(
+            predictionsPath,
+            "utf8"
+        )
+    );
 
-            if (error) {
-                console.error(`Execution error: ${error.message}`);
+    if (!predictions[stock]) {
+        return res.status(404).json({
+            error: "Stock not found"
+        });
+    }
 
-                return res.status(500).json({
-                    error: error.message
-                });
-            }
-
-            if (stderr) {
-                console.error(`Shell stderr: ${stderr}`);
-            }
-
-            try {
-
-                const result = JSON.parse(stdout);
-
-                res.json(result);
-
-            } catch (err) {
-
-                console.error("JSON Parse Error:", err);
-
-                res.status(500).json({
-                    error: "Invalid response from Python script"
-                });
-
-            }
-        }
+    res.json(
+        predictions[stock]
     );
 
 });
