@@ -39,7 +39,7 @@ export default function AnalysisCard({ analysis, signal, expectedChange, symbol,
     return (
       <div className="glass-card inner-glow rounded-xl p-6 border border-white/10 h-full min-h-[295px] flex flex-col justify-between animate-pulse">
         <div>
-          <div className="h-5 bg-white/10 rounded w-1/3 mb-6"></div>
+          <div className="h-6 bg-white/10 rounded w-1/3 mb-6"></div>
           <div className="flex flex-col gap-3">
             <div className="h-4 bg-white/10 rounded w-full"></div>
             <div className="h-4 bg-white/10 rounded w-5/6"></div>
@@ -58,28 +58,30 @@ export default function AnalysisCard({ analysis, signal, expectedChange, symbol,
   return (
     <div className="glass-card inner-glow rounded-xl p-6 border border-white/10 transition-all duration-300 hover:scale-[1.02] h-full min-h-[295px] flex flex-col justify-between">
       <div>
-        <h2 className="font-headline-sm text-headline-sm text-on-surface mb-5 flex items-center gap-2 select-none">
-          <span className="material-symbols-outlined text-primary">psychology</span> AI Analysis
+        <h2 className="font-headline-sm text-headline-sm text-on-surface mb-4 flex items-center gap-2 select-none border-b border-white/5 pb-3">
+          <span className="material-symbols-outlined text-primary text-xl">psychology</span> AI Analysis
         </h2>
 
         <div className="animate-in fade-in slide-in-from-bottom-2 duration-200">
           {!displayAnalysis ? (
-            <div className="flex flex-col items-center justify-center text-center py-6 text-on-surface-variant/50 select-none">
-              <span className="material-symbols-outlined text-4xl mb-2">auto_awesome</span>
+            <div className="flex flex-col items-center justify-center text-center py-10 text-on-surface-variant/50 select-none">
+              <span className="material-symbols-outlined text-4xl mb-2 text-primary/40 animate-pulse">auto_awesome</span>
               <p className="font-body-sm text-body-sm max-w-[240px]">
                 Select an asset and run a prediction to see AI analysis.
               </p>
             </div>
           ) : (
-            <div className="flex gap-3">
-              <span className="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5 animate-pulse">
-                auto_awesome
-              </span>
-              <div className="flex flex-col">
-                <span className="font-label-md text-[11px] text-primary tracking-wider uppercase mb-1 select-none">
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-2 select-none">
+                <span className="material-symbols-outlined text-primary text-lg animate-pulse">
+                  auto_awesome
+                </span>
+                <span className="font-label-md text-label-md text-primary tracking-wider uppercase">
                   AI Forecast Narrative
                 </span>
-                <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed text-justify">
+              </div>
+              <div className="bg-[#0f172a]/40 border border-white/5 rounded-xl p-5 shadow-inner">
+                <p className="font-body-md text-body-md text-on-surface-variant/95 leading-relaxed text-left">
                   {displayAnalysis}
                 </p>
               </div>
