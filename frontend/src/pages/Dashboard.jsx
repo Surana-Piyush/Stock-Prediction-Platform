@@ -246,9 +246,9 @@ export default function Dashboard() {
           <div className="col-span-4 md:col-span-4">
             <AnalysisCard
               analysis={analysis}
-              rmse={rmse}
-              r2={r2}
-              directionAccuracy={directionAccuracy}
+              signal={signal}
+              expectedChange={expectedReturn}
+              symbol={selectedStock}
               isLoading={isPredicting}
             />
           </div>
