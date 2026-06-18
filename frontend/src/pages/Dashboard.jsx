@@ -4,7 +4,7 @@ import MetricCard from '../components/MetricCard';
 import StockSelector from '../components/StockSelector';
 import SignalCard from '../components/SignalCard';
 import ForecastChart from '../components/ForecastChart';
-import ModelInfo from '../components/ModelInfo';
+import AnalysisCard from '../components/AnalysisCard';
 import screenImage from '../assets/screen.png';
 
 export default function Dashboard() {
@@ -91,6 +91,7 @@ export default function Dashboard() {
   const rmse = predictionData ? predictionData.rmse : '--';
   const r2 = predictionData ? predictionData.r2 : '--';
   const directionAccuracy = predictionData ? predictionData.DirectionAccuracy : '--';
+  const analysis = predictionData ? predictionData.Analysis : '--';
 
   return (
     <div className="antialiased min-h-screen flex flex-col font-body-sm relative bg-[#0b1326] text-[#dae2fd]">
@@ -243,11 +244,11 @@ export default function Dashboard() {
           </div>
 
           <div className="col-span-4 md:col-span-4">
-            <ModelInfo
+            <AnalysisCard
+              analysis={analysis}
               rmse={rmse}
               r2={r2}
               directionAccuracy={directionAccuracy}
-              confidence={confidence}
               isLoading={isPredicting}
             />
           </div>

@@ -4,77 +4,84 @@
         "CurrentPrice": 2942.5,
         "PredictedPrice": 2939.34,
         "ExpectedReturn": -0.11,
-        "rmse": 94.97167883707415,
-        "r2": 0.9326566777593183,
-        "DirectionAccuracy": 0,
+        "rmse": 94.97167883707418,
+        "r2": 0.9326566777593182,
+        "DirectionAccuracy": 1,
         "Confidence": 93.27,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "ADANIPORTS.NS": {
         "Symbol": "ADANIPORTS.NS",
         "CurrentPrice": 1804.8,
         "PredictedPrice": 1790.91,
         "ExpectedReturn": -0.77,
-        "rmse": 35.85515879729695,
-        "r2": 0.9510986406145131,
+        "rmse": 35.85515879729693,
+        "r2": 0.9510986406145132,
         "DirectionAccuracy": 1,
         "Confidence": 95.11,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "APOLLOHOSP.NS": {
         "Symbol": "APOLLOHOSP.NS",
         "CurrentPrice": 8468.5,
         "PredictedPrice": 8539.29,
         "ExpectedReturn": 0.84,
-        "rmse": 125.49645507822699,
-        "r2": 0.953976008543406,
-        "DirectionAccuracy": 0,
+        "rmse": 125.49645507822689,
+        "r2": 0.9539760085434061,
+        "DirectionAccuracy": 1,
         "Confidence": 95.4,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "AXISBANK.NS": {
         "Symbol": "AXISBANK.NS",
         "CurrentPrice": 1368.3,
         "PredictedPrice": 1368.76,
         "ExpectedReturn": 0.03,
-        "rmse": 19.896629194671167,
-        "r2": 0.9574650675339449,
+        "rmse": 19.89662919467116,
+        "r2": 0.957465067533945,
         "DirectionAccuracy": 1,
         "Confidence": 95.75,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "BAJAJ-AUTO.NS": {
         "Symbol": "BAJAJ-AUTO.NS",
         "CurrentPrice": 9943.0,
         "PredictedPrice": 10008.3,
         "ExpectedReturn": 0.66,
-        "rmse": 282.4084609416202,
-        "r2": 0.9068176105762873,
-        "DirectionAccuracy": 0,
+        "rmse": 282.40846094161924,
+        "r2": 0.906817610576288,
+        "DirectionAccuracy": 1,
         "Confidence": 90.68,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "BAJAJFINSV.NS": {
         "Symbol": "BAJAJFINSV.NS",
         "CurrentPrice": 1750.2,
         "PredictedPrice": 1740.42,
         "ExpectedReturn": -0.56,
-        "rmse": 36.75280012515727,
+        "rmse": 36.7528001251573,
         "r2": 0.9570817321930428,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 95.71,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "BAJFINANCE.NS": {
         "Symbol": "BAJFINANCE.NS",
         "CurrentPrice": 942.3,
         "PredictedPrice": 951.36,
         "ExpectedReturn": 0.96,
-        "rmse": 19.488880461936127,
+        "rmse": 19.488880461936112,
         "r2": 0.9762581196548421,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 97.63,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "BEL.NS": {
         "Symbol": "BEL.NS",
@@ -85,29 +92,32 @@
         "r2": 0.972541258823344,
         "DirectionAccuracy": 1,
         "Confidence": 97.25,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "BHARTIARTL.NS": {
         "Symbol": "BHARTIARTL.NS",
         "CurrentPrice": 1841.2,
         "PredictedPrice": 1820.11,
         "ExpectedReturn": -1.15,
-        "rmse": 29.5553924330534,
+        "rmse": 29.555392433053385,
         "r2": 0.9820727522758028,
         "DirectionAccuracy": 1,
         "Confidence": 98.21,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "BPCL.NS": {
         "Symbol": "BPCL.NS",
         "CurrentPrice": 310.6,
         "PredictedPrice": 309.58,
         "ExpectedReturn": -0.33,
-        "rmse": 7.453668037763578,
-        "r2": 0.9544447349632251,
+        "rmse": 7.453668037763574,
+        "r2": 0.9544447349632252,
         "DirectionAccuracy": 1,
         "Confidence": 95.44,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "BRITANNIA.NS": {
         "Symbol": "BRITANNIA.NS",
@@ -116,207 +126,226 @@
         "ExpectedReturn": -0.29,
         "rmse": 109.21976765859382,
         "r2": 0.9392986307900828,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 93.93,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "CIPLA.NS": {
         "Symbol": "CIPLA.NS",
         "CurrentPrice": 1381.3,
         "PredictedPrice": 1370.46,
         "ExpectedReturn": -0.78,
-        "rmse": 23.054513209240096,
-        "r2": 0.9370483653714017,
+        "rmse": 23.054513209240067,
+        "r2": 0.9370483653714018,
         "DirectionAccuracy": 1,
         "Confidence": 93.7,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "COALINDIA.NS": {
         "Symbol": "COALINDIA.NS",
         "CurrentPrice": 444.05,
         "PredictedPrice": 445.72,
         "ExpectedReturn": 0.38,
-        "rmse": 9.142958568998445,
-        "r2": 0.9466840071499515,
-        "DirectionAccuracy": 0,
+        "rmse": 9.142958568998441,
+        "r2": 0.9466840071499516,
+        "DirectionAccuracy": 1,
         "Confidence": 94.67,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "DIVISLAB.NS": {
         "Symbol": "DIVISLAB.NS",
         "CurrentPrice": 6608.5,
         "PredictedPrice": 6564.07,
         "ExpectedReturn": -0.67,
-        "rmse": 124.09472135209136,
+        "rmse": 124.09472135209126,
         "r2": 0.970895873384435,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 97.09,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "DRREDDY.NS": {
         "Symbol": "DRREDDY.NS",
         "CurrentPrice": 1279.5,
         "PredictedPrice": 1279.43,
         "ExpectedReturn": -0.01,
-        "rmse": 21.644167055623075,
-        "r2": 0.8918793387413994,
+        "rmse": 21.644167055623058,
+        "r2": 0.8918793387413995,
         "DirectionAccuracy": 1,
         "Confidence": 89.19,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "EICHERMOT.NS": {
         "Symbol": "EICHERMOT.NS",
         "CurrentPrice": 7624.5,
         "PredictedPrice": 7398.16,
         "ExpectedReturn": -2.97,
-        "rmse": 129.47385963294204,
+        "rmse": 129.47385963294224,
         "r2": 0.9857886635224371,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 98.58,
-        "Signal": "STRONG SELL"
+        "Signal": "STRONG SELL",
+        "Analysis": "The model detects strong bearish momentum supported by recent market trends and technical indicators. Current conditions indicate elevated downside risk in the near term."
     },
     "GRASIM.NS": {
         "Symbol": "GRASIM.NS",
         "CurrentPrice": 3164.5,
         "PredictedPrice": 3144.63,
         "ExpectedReturn": -0.63,
-        "rmse": 47.61370798851364,
-        "r2": 0.927502338362466,
+        "rmse": 47.613707988513625,
+        "r2": 0.9275023383624661,
         "DirectionAccuracy": 1,
         "Confidence": 92.75,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "HCLTECH.NS": {
         "Symbol": "HCLTECH.NS",
         "CurrentPrice": 1119.3,
         "PredictedPrice": 1144.5,
         "ExpectedReturn": 2.25,
-        "rmse": 31.76777481673317,
+        "rmse": 31.76777481673319,
         "r2": 0.9663587978685461,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 96.64,
-        "Signal": "STRONG BUY"
+        "Signal": "STRONG BUY",
+        "Analysis": "The model identifies strong bullish momentum supported by recent market trends and technical indicators. Current conditions suggest a high probability of continued upward movement."
     },
     "HDFCBANK.NS": {
         "Symbol": "HDFCBANK.NS",
         "CurrentPrice": 777.35,
         "PredictedPrice": 769.44,
         "ExpectedReturn": -1.02,
-        "rmse": 14.305027884316925,
+        "rmse": 14.30502788431692,
         "r2": 0.9713552491058446,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 97.14,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "HDFCLIFE.NS": {
         "Symbol": "HDFCLIFE.NS",
         "CurrentPrice": 581.2,
         "PredictedPrice": 579.17,
         "ExpectedReturn": -0.35,
-        "rmse": 10.859652138771994,
+        "rmse": 10.859652138771992,
         "r2": 0.9750420927830716,
         "DirectionAccuracy": 1,
         "Confidence": 97.5,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "HINDALCO.NS": {
         "Symbol": "HINDALCO.NS",
         "CurrentPrice": 1013.9,
         "PredictedPrice": 992.89,
         "ExpectedReturn": -2.07,
-        "rmse": 22.44220557884335,
-        "r2": 0.9747515760365059,
-        "DirectionAccuracy": 0,
+        "rmse": 22.44220557884338,
+        "r2": 0.9747515760365058,
+        "DirectionAccuracy": 1,
         "Confidence": 97.48,
-        "Signal": "STRONG SELL"
+        "Signal": "STRONG SELL",
+        "Analysis": "The model detects strong bearish momentum supported by recent market trends and technical indicators. Current conditions indicate elevated downside risk in the near term."
     },
     "HINDUNILVR.NS": {
         "Symbol": "HINDUNILVR.NS",
         "CurrentPrice": 2156.1,
         "PredictedPrice": 2166.34,
         "ExpectedReturn": 0.47,
-        "rmse": 42.38054742795535,
-        "r2": 0.9416245507570734,
+        "rmse": 42.38054742795539,
+        "r2": 0.9416245507570733,
         "DirectionAccuracy": 1,
         "Confidence": 94.16,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "ICICIBANK.NS": {
         "Symbol": "ICICIBANK.NS",
         "CurrentPrice": 1327.6,
         "PredictedPrice": 1328.67,
         "ExpectedReturn": 0.08,
-        "rmse": 21.270758784847434,
+        "rmse": 21.270758784847438,
         "r2": 0.952021611684343,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 95.2,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "INFY.NS": {
         "Symbol": "INFY.NS",
         "CurrentPrice": 1134.9,
         "PredictedPrice": 1153.2,
         "ExpectedReturn": 1.61,
-        "rmse": 33.145129818134215,
+        "rmse": 33.14512981813421,
         "r2": 0.9729925499260442,
         "DirectionAccuracy": 1,
         "Confidence": 97.3,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "ITC.NS": {
         "Symbol": "ITC.NS",
         "CurrentPrice": 287.9,
         "PredictedPrice": 286.8,
         "ExpectedReturn": -0.38,
-        "rmse": 6.686801119919645,
+        "rmse": 6.686801119919643,
         "r2": 0.9794684225269422,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 97.95,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "JSWSTEEL.NS": {
         "Symbol": "JSWSTEEL.NS",
         "CurrentPrice": 1296.5,
         "PredictedPrice": 1283.85,
         "ExpectedReturn": -0.98,
-        "rmse": 21.5602991564934,
-        "r2": 0.9691488492892628,
-        "DirectionAccuracy": 0,
+        "rmse": 21.560299156493432,
+        "r2": 0.9691488492892627,
+        "DirectionAccuracy": 1,
         "Confidence": 96.91,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "KOTAKBANK.NS": {
         "Symbol": "KOTAKBANK.NS",
         "CurrentPrice": 405.75,
         "PredictedPrice": 402.77,
         "ExpectedReturn": -0.73,
-        "rmse": 7.176981892752081,
+        "rmse": 7.1769818927520825,
         "r2": 0.9507062889180475,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 95.07,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "LT.NS": {
         "Symbol": "LT.NS",
         "CurrentPrice": 4169.8,
         "PredictedPrice": 4206.78,
         "ExpectedReturn": 0.89,
-        "rmse": 96.42829597894716,
-        "r2": 0.8677218214960098,
-        "DirectionAccuracy": 0,
+        "rmse": 96.42829597894725,
+        "r2": 0.8677218214960096,
+        "DirectionAccuracy": 1,
         "Confidence": 86.77,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "M&M.NS": {
         "Symbol": "M&M.NS",
         "CurrentPrice": 3134.3,
         "PredictedPrice": 3092.74,
         "ExpectedReturn": -1.33,
-        "rmse": 73.453499638834,
+        "rmse": 73.45349963883399,
         "r2": 0.9569169223198108,
         "DirectionAccuracy": 1,
         "Confidence": 95.69,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "MARUTI.NS": {
         "Symbol": "MARUTI.NS",
@@ -325,75 +354,82 @@
         "ExpectedReturn": 0.92,
         "rmse": 359.7820151582053,
         "r2": 0.9540347851962343,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 95.4,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "NESTLEIND.NS": {
         "Symbol": "NESTLEIND.NS",
         "CurrentPrice": 1374.7,
         "PredictedPrice": 1363.44,
         "ExpectedReturn": -0.82,
-        "rmse": 21.252967583368218,
+        "rmse": 21.25296758336822,
         "r2": 0.9462548984101209,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 94.63,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "NTPC.NS": {
         "Symbol": "NTPC.NS",
         "CurrentPrice": 348.1,
         "PredictedPrice": 342.05,
         "ExpectedReturn": -1.74,
-        "rmse": 7.817394868112754,
-        "r2": 0.9302038998953002,
+        "rmse": 7.817394868112755,
+        "r2": 0.9302038998953001,
         "DirectionAccuracy": 1,
         "Confidence": 93.02,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "ONGC.NS": {
         "Symbol": "ONGC.NS",
         "CurrentPrice": 243.65,
         "PredictedPrice": 244.65,
         "ExpectedReturn": 0.41,
-        "rmse": 5.980305506700034,
-        "r2": 0.9355781058170275,
+        "rmse": 5.980305506700032,
+        "r2": 0.9355781058170276,
         "DirectionAccuracy": 1,
         "Confidence": 93.56,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "POWERGRID.NS": {
         "Symbol": "POWERGRID.NS",
         "CurrentPrice": 285.7,
         "PredictedPrice": 287.14,
         "ExpectedReturn": 0.5,
-        "rmse": 6.702070936565805,
-        "r2": 0.8889516284074164,
-        "DirectionAccuracy": 0,
+        "rmse": 6.702070936565809,
+        "r2": 0.8889516284074163,
+        "DirectionAccuracy": 1,
         "Confidence": 88.9,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "RELIANCE.NS": {
         "Symbol": "RELIANCE.NS",
         "CurrentPrice": 1307.0,
         "PredictedPrice": 1317.33,
         "ExpectedReturn": 0.79,
-        "rmse": 23.80162647798475,
-        "r2": 0.942784873981191,
+        "rmse": 23.801626477984726,
+        "r2": 0.9427848739811912,
         "DirectionAccuracy": 1,
         "Confidence": 94.28,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "SBILIFE.NS": {
         "Symbol": "SBILIFE.NS",
         "CurrentPrice": 1759.5,
         "PredictedPrice": 1745.74,
         "ExpectedReturn": -0.78,
-        "rmse": 31.824536700986968,
+        "rmse": 31.824536700987004,
         "r2": 0.9759530956122795,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 97.6,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "SBIN.NS": {
         "Symbol": "SBIN.NS",
@@ -404,127 +440,139 @@
         "r2": 0.9794077739549149,
         "DirectionAccuracy": 1,
         "Confidence": 97.94,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "SHRIRAMFIN.NS": {
         "Symbol": "SHRIRAMFIN.NS",
         "CurrentPrice": 1000.65,
         "PredictedPrice": 987.8,
         "ExpectedReturn": -1.28,
-        "rmse": 23.360372986808017,
+        "rmse": 23.36037298680801,
         "r2": 0.9813581043576819,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 98.14,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "SUNPHARMA.NS": {
         "Symbol": "SUNPHARMA.NS",
         "CurrentPrice": 1806.0,
         "PredictedPrice": 1783.49,
         "ExpectedReturn": -1.25,
-        "rmse": 25.972426437832517,
+        "rmse": 25.972426437832514,
         "r2": 0.9381591539675918,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 93.82,
-        "Signal": "SELL"
+        "Signal": "SELL",
+        "Analysis": "The model predicts downward movement based on recent price action and momentum indicators. Current market conditions suggest weakness and a bearish short-term outlook."
     },
     "TATACONSUM.NS": {
         "Symbol": "TATACONSUM.NS",
         "CurrentPrice": 1100.4,
         "PredictedPrice": 1104.28,
         "ExpectedReturn": 0.35,
-        "rmse": 21.991467565810286,
-        "r2": 0.9291338863913333,
+        "rmse": 21.991467565810268,
+        "r2": 0.9291338863913334,
         "DirectionAccuracy": 1,
         "Confidence": 92.91,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "TATAPOWER.NS": {
         "Symbol": "TATAPOWER.NS",
         "CurrentPrice": 404.1,
         "PredictedPrice": 394.23,
         "ExpectedReturn": -2.44,
-        "rmse": 10.278669917312111,
-        "r2": 0.8766253559471955,
+        "rmse": 10.278669917312104,
+        "r2": 0.8766253559471957,
         "DirectionAccuracy": 1,
         "Confidence": 87.66,
-        "Signal": "STRONG SELL"
+        "Signal": "STRONG SELL",
+        "Analysis": "The model detects strong bearish momentum supported by recent market trends and technical indicators. Current conditions indicate elevated downside risk in the near term."
     },
     "TATASTEEL.NS": {
         "Symbol": "TATASTEEL.NS",
         "CurrentPrice": 197.28,
         "PredictedPrice": 196.85,
         "ExpectedReturn": -0.22,
-        "rmse": 3.665063059245514,
+        "rmse": 3.665063059245513,
         "r2": 0.9747839464508282,
         "DirectionAccuracy": 1,
         "Confidence": 97.48,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "TCS.NS": {
         "Symbol": "TCS.NS",
         "CurrentPrice": 2162.0,
         "PredictedPrice": 2201.42,
         "ExpectedReturn": 1.82,
-        "rmse": 74.31150469832217,
+        "rmse": 74.31150469832218,
         "r2": 0.9816893113897589,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 98.17,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "TECHM.NS": {
         "Symbol": "TECHM.NS",
         "CurrentPrice": 1425.6,
         "PredictedPrice": 1445.25,
         "ExpectedReturn": 1.38,
-        "rmse": 31.581131427170142,
+        "rmse": 31.58113142717014,
         "r2": 0.9361025352017405,
         "DirectionAccuracy": 1,
         "Confidence": 93.61,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "TRENT.NS": {
         "Symbol": "TRENT.NS",
         "CurrentPrice": 2901.1,
         "PredictedPrice": 2897.8,
         "ExpectedReturn": -0.11,
-        "rmse": 247.13278074714847,
+        "rmse": 247.13278074714844,
         "r2": 0.9728710618253411,
         "DirectionAccuracy": 1,
         "Confidence": 97.29,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "ULTRACEMCO.NS": {
         "Symbol": "ULTRACEMCO.NS",
         "CurrentPrice": 11466.0,
         "PredictedPrice": 11440.82,
         "ExpectedReturn": -0.22,
-        "rmse": 214.7387683199974,
+        "rmse": 214.7387683199975,
         "r2": 0.9090552980836729,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 90.91,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     },
     "UPL.NS": {
         "Symbol": "UPL.NS",
         "CurrentPrice": 616.6,
         "PredictedPrice": 625.21,
         "ExpectedReturn": 1.4,
-        "rmse": 15.567971896507526,
+        "rmse": 15.56797189650753,
         "r2": 0.9593336007709325,
-        "DirectionAccuracy": 0,
+        "DirectionAccuracy": 1,
         "Confidence": 95.93,
-        "Signal": "BUY"
+        "Signal": "BUY",
+        "Analysis": "The model predicts upward movement based on recent price action and momentum indicators. Current market conditions suggest positive short-term potential with a bullish outlook."
     },
     "WIPRO.NS": {
         "Symbol": "WIPRO.NS",
         "CurrentPrice": 181.38,
         "PredictedPrice": 181.77,
         "ExpectedReturn": 0.22,
-        "rmse": 5.930589212471503,
-        "r2": 0.9500812686724528,
-        "DirectionAccuracy": 0,
+        "rmse": 5.930589212471499,
+        "r2": 0.9500812686724529,
+        "DirectionAccuracy": 1,
         "Confidence": 95.01,
-        "Signal": "HOLD"
+        "Signal": "HOLD",
+        "Analysis": "The model indicates neutral market conditions with no strong directional bias. Current price action suggests monitoring the stock for clearer trend confirmation before taking action."
     }
 }
