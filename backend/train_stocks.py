@@ -618,8 +618,8 @@ for stock in stocks:
     stock_df = stock_data[stock_data["Symbol"]==stock]
     stock_df["Date"] = pd.to_datetime(stock_df["Date"])
     stock_df = stock_df.sort_values("Date")
-    print("\n", stock)
-    print(stock_df[["Date", "Close"]].tail(5))
+    # print("\n", stock)
+    # print(stock_df[["Date", "Close"]].tail(5))
     stock_df = create_features(stock_df)
     prediction_row = (stock_df.groupby("Symbol").tail(1).copy())
     stock_df=stock_df.dropna()

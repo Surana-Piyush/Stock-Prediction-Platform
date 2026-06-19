@@ -6,17 +6,9 @@ import pandas as pd
 import yfinance as yf
 from datetime import datetime, timedelta
 
-# Anchor to this script's own folder, NOT the current working directory.
-# A bare relative path like "Nifty 50.csv" resolves against wherever you
-# happen to run `python` from — so running this from the repo root vs
-# from inside backend/ would silently read/write two different files.
-# This is the same pattern train_stocks.py already uses.
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV_FILE = os.path.join(BASE_DIR, "Nifty 50.csv")
 
-# Yahoo will start throttling/blocking if you hit it 50x back-to-back
-# with no delay. This is the most common reason the whole run quietly
-# comes back with "No new data available."
 REQUEST_DELAY_SECONDS = 1.5
 MAX_RETRIES = 3
 RETRY_BACKOFF_SECONDS = 5
