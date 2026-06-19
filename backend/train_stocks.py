@@ -616,6 +616,10 @@ prediction={}
 # %%
 for stock in stocks:
     stock_df = stock_data[stock_data["Symbol"]==stock]
+    stock_df["Date"] = pd.to_datetime(stock_df["Date"])
+    stock_df = stock_df.sort_values("Date")
+    print("\n", stock)
+    print(stock_df[["Date", "Close"]].tail(5))
     stock_df = create_features(stock_df)
     prediction_row = (stock_df.groupby("Symbol").tail(1).copy())
     stock_df=stock_df.dropna()
@@ -654,7 +658,7 @@ for stock in stocks:
     pred_scaled= model.predict(x_test_scaled)
     pred=y_scaler.inverse_transform(pred_scaled.reshape(-1,1)).ravel()
 
-    latest_row = stock_df.tail(1)[feature_cols]
+    latest_row = prediction_row[feature_cols]
     latest_scaled=x_scaler.transform(latest_row)
     pred_scaled=model.predict(latest_scaled)
     pred_price=y_scaler.inverse_transform(pred_scaled.reshape(-1,1))[0][0]
@@ -665,7 +669,7 @@ for stock in stocks:
     np.sign(pred) == np.sign(y_test)
     )
 
-    current_price = float(stock_df.iloc[-1]["Close"])
+    current_price = float(prediction_row.iloc[-1]["Close"])
 
     expected_return = (
         (pred_price - current_price)

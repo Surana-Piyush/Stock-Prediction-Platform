@@ -1,8 +1,25 @@
+import os
+import time
+import traceback
+
 import pandas as pd
 import yfinance as yf
 from datetime import datetime, timedelta
 
-CSV_FILE = "Nifty 50.csv"
+# Anchor to this script's own folder, NOT the current working directory.
+# A bare relative path like "Nifty 50.csv" resolves against wherever you
+# happen to run `python` from — so running this from the repo root vs
+# from inside backend/ would silently read/write two different files.
+# This is the same pattern train_stocks.py already uses.
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_FILE = os.path.join(BASE_DIR, "Nifty 50.csv")
+
+# Yahoo will start throttling/blocking if you hit it 50x back-to-back
+# with no delay. This is the most common reason the whole run quietly
+# comes back with "No new data available."
+REQUEST_DELAY_SECONDS = 1.5
+MAX_RETRIES = 3
+RETRY_BACKOFF_SECONDS = 5
 
 NIFTY50 = [
     "ADANIENT.NS",
@@ -79,43 +96,77 @@ def get_last_date(df):
     return df["Date"].max()
 
 
-def fetch_stock_data(symbol, start_date):
+def fetch_stock_data(symbol, start_date, end_date):
 
-    try:
+    last_error = None
 
-        data = yf.download(
-            symbol,
-            start=start_date,
-            progress=False,
-            auto_adjust=True
-        )
+    for attempt in range(1, MAX_RETRIES + 1):
 
-        if data.empty:
-            return pd.DataFrame()
+        try:
 
-        data = data.reset_index()
+            data = yf.download(
+                symbol,
+                start=start_date,
+                end=end_date,
+                progress=False,
+                auto_adjust=True
+            )
 
-        if isinstance(data.columns, pd.MultiIndex):
-            data.columns = data.columns.get_level_values(0)
+            # yf.download() can come back empty even with no exception
+            # raised (e.g. Yahoo rate-limited the request or returned a
+            # malformed/empty JSON payload). Fall back to the Ticker
+            # API, which uses a different code path and is often more
+            # reliable when download() is being flaky.
+            if data.empty:
+                ticker = yf.Ticker(symbol)
+                data = ticker.history(
+                    start=start_date,
+                    end=end_date,
+                    auto_adjust=True
+                )
 
-        data["Symbol"] = symbol
+            if data.empty:
+                last_error = "empty response from both download() and Ticker.history()"
+                raise ValueError(last_error)
 
-        columns_needed = [
-            "Symbol",
-            "Date",
-            "Close",
-            "High",
-            "Low",
-            "Open",
-            "Volume"
-        ]
+            data = data.reset_index()
 
-        return data[columns_needed]
+            if isinstance(data.columns, pd.MultiIndex):
+                data.columns = data.columns.get_level_values(0)
 
-    except Exception as e:
+            data["Symbol"] = symbol
 
-        print(f"Error downloading {symbol}: {e}")
-        return pd.DataFrame()
+            columns_needed = [
+                "Symbol",
+                "Date",
+                "Close",
+                "High",
+                "Low",
+                "Open",
+                "Volume"
+            ]
+
+            return data[columns_needed]
+
+        except Exception as e:
+
+            last_error = f"{type(e).__name__}: {e}"
+
+            if attempt < MAX_RETRIES:
+                print(
+                    f"  Attempt {attempt} failed for {symbol} "
+                    f"({last_error}). Retrying in "
+                    f"{RETRY_BACKOFF_SECONDS}s..."
+                )
+                time.sleep(RETRY_BACKOFF_SECONDS)
+            else:
+                print(
+                    f"  Giving up on {symbol} after {MAX_RETRIES} "
+                    f"attempts. Last error: {last_error}"
+                )
+                traceback.print_exc()
+
+    return pd.DataFrame()
 
 
 def main():
@@ -135,9 +186,14 @@ def main():
         print("Dataset already up to date.")
         return
 
-    print(f"Fetching data from {start_date.date()}")
+    # yfinance's `end` is exclusive, so add a day past "today" to make
+    # sure today's session (if already available) gets included.
+    end_date = today + timedelta(days=1)
+
+    print(f"Fetching data from {start_date.date()} to {today}")
 
     all_new_data = []
+    failed_symbols = []
 
     for symbol in NIFTY50:
 
@@ -145,15 +201,33 @@ def main():
 
         stock_df = fetch_stock_data(
             symbol,
-            start_date
+            start_date,
+            end_date
         )
 
         if not stock_df.empty:
             all_new_data.append(stock_df)
+        else:
+            failed_symbols.append(symbol)
+
+        # Be polite to Yahoo's endpoint so we don't get rate-limited
+        # partway through the 50-symbol loop.
+        time.sleep(REQUEST_DELAY_SECONDS)
+
+    if failed_symbols:
+        print(
+            f"\nNo data returned for {len(failed_symbols)} symbol(s): "
+            f"{', '.join(failed_symbols)}\n"
+        )
 
     if not all_new_data:
 
-        print("No new data available.")
+        print(
+            "No new data available. This usually means Yahoo Finance "
+            "is rate-limiting or blocking requests right now rather "
+            "than there being no new trading data — re-run in a few "
+            "minutes, or check the error messages printed above."
+        )
         return
 
     new_df = pd.concat(
