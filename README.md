@@ -179,7 +179,7 @@ During local development, Vite's dev server proxies any request to `/api/*` to `
 ### Dataset
 
 - Source file: `backend/Nifty 50.csv` (~129,000 rows).
-- Covers **48 NIFTY 50 constituent symbols** (e.g. `RELIANCE.NS`, `TCS.NS`, `INFY.NS`, `HDFCBANK.NS`, etc. — see [`stockNames.route.js`](backend/routes/stockNames.route.js) for the full list), with daily history going back to **2015**.
+- Covers **NIFTY 50 constituent symbols** (e.g. `RELIANCE.NS`, `TCS.NS`, `INFY.NS`, `HDFCBANK.NS`, etc. — see [`stockNames.route.js`](backend/routes/stockNames.route.js) for the full list), with daily history going back to **2015**.
 - Columns: `Symbol, Date, Close, High, Low, Open, Volume`.
 - The dataset is kept current by `update.py`, which:
   - Loads the existing CSV and finds the most recent date already stored.
@@ -246,7 +246,7 @@ The predicted price is converted into an **expected % return** vs. the current p
 
 `train_stocks.py` also attaches a short, templated **plain-English analysis string** for each signal class (e.g. *"The model identifies strong bullish momentum supported by recent market trends..."*), which the frontend's `AnalysisCard` displays — falling back to its own locally-generated text if the field is missing.
 
-All 48 results are aggregated into a single `predictions.json` file at the repository root, keyed by stock symbol.
+All 50 results are aggregated into a single `predictions.json` file at the repository root, keyed by stock symbol.
 
 > 💡 `prediction_model.py` is a standalone CLI variant of the same pipeline for a **single** symbol (`python prediction_model.py RELIANCE.NS`), useful for debugging or ad-hoc predictions without retraining every stock.
 
