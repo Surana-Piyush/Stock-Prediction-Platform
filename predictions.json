@@ -496,7 +496,7 @@
         "CurrentPrice": 187.22,
         "PredictedPrice": 186.79,
         "ExpectedReturn": -0.23,
-        "rmse": 3.983967711374395,
+        "rmse": 3.9839677113743948,
         "r2": 0.9733138228574016,
         "DirectionAccuracy": 1,
         "Confidence": 97.33,
